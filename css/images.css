@@ -1,0 +1,14 @@
+.images{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+
+.img{
+    padding: 5px;
+    transition: 1s;
+}
+
+.img:hover{
+    transform: scale(1.1);
+}

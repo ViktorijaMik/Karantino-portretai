@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Quarantine Portraits</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+</head>
+
+<body>
+     <ul class="navigation">
+        <li><a href="index.php"><img src="images/logo/quarantine%20portraits-black.png" alt="logo" class="logo"></a></li>
+        <li><a href="index.php">HOME</a></li>
+        <li><a href="gallery.php">GALLERY</a></li>
+        <li><a href="publications.php">PUBLICATIONS</a></li>
+        <li><a href="contacts.php">CONTACTS</a></li>
+     </ul>
+     
+     <h1>QUARANTINE PORTRAITS</h1>
+     
+     <div id="slider">
+        <ul>
+          <li><img src="images/slider/DJI_0139-adas-vasiliauskas.jpg" alt="Portraits of quarantine" class="main-img"></li>
+          <li><img src="images/slider/DJI_0197-adas-vasiliauskas.jpg" alt="Portraits of quarantine" class="main-img"></li>
+          <li><img src="images/slider/DJI_0511-adas-vasiliauskas.jpg" alt="Portraits of quarantine" class="main-img"></li>
+          <li><img src="images/slider/DJI_0936-adas-vasiliauskas.jpg" alt="Portraits of quarantine" class="main-img"></li>
+        </ul>
+    </div>
+     
+     <div class="intro">
+         <p>I took my drone and photographed people in their homes through their windows and on their terraces. It’s a 100% zero-human-contact way to see how people are going crazy during quarantine times.</p>
+         <p>When Lithuania went under quarantine, all my photography jobs in advertising were canceled, events postponed or canceled, and I was sitting without any job and thinking, “what the heck is going on and how     can I solve this puzzle?” Eventually, I knew that I needed to photograph something interesting, but this social distance thing was a tricky thing.</p>
+         <p>At first, I thought of offering to shoot people with a telephoto lens, but then I remembered I use a drone in my wedding photography and the drone is a totally zero-human-contact way to capture things. I     shot a few of my friends, the photos gained a lot of likes, and the project took off.</p>
+         <p>I started this project to give people a chance to brighten their day in this negative corona information environment. I believe that these funny photos remind everyone that sitting quarantined at home can     be fun too. And, of course, to remind everybody that you need to keep your social distance during these times.</p>
+         <p>Note: All photos were taken with consent and I have permission from these people to share their images.</p>
+     </div>
+     
+     <footer>
+         <div class="row">
+            <div class="col-s12 col-m8 col-l6">
+                Copyright &#169; Adas Vasiliauskas | <a href="mailto:adas@tasfotografas.lt" class="emailMe">Email me</a> to request an interview or article posting.
+            </div>
+            <div class="col-s12 col-m4 col-l6 social-link">
+                <a href="https://www.facebook.com/mane.fotografavo.adas/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/pabegimas/" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+     </footer>
+     
+     <script src="js/jquery-3.5.1.js"></script>
+     <script>
+         
+       //SLIDER
+            $(document).ready(function ($) {
+                setInterval(function () {
+                moveRight();
+                }, 5000);
+                
+            var slideCount = $('#slider ul li').length;
+            var slideWidth = $('#slider ul li').width();
+            var slideHeight = $('#slider ul li').height();
+            var sliderUlWidth = slideCount * slideWidth;
+
+            $('#slider').css({ width: slideWidth, height: slideHeight });
+
+            $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+
+            $('#slider ul li:last-child').prependTo('#slider ul');
+            
+             function moveRight() {
+                $('#slider ul').animate({
+                    left: -slideWidth
+                },
+                500,
+                function () {
+                    $('#slider ul li:first-child').appendTo('#slider ul');
+                    $('#slider ul').css('left', '');
+                });
+            };
+        });     
+    </script>
+</body>
+</html>

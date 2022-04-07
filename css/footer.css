@@ -1,0 +1,34 @@
+footer{
+    color: lightgray;
+    background-color: #333333;
+    padding: 10px;
+    font-size: 12px;
+    width: 100%;    
+    margin-top: auto;
+}
+
+.emailMe{
+    text-decoration: none;
+    color: lightgray;
+}
+
+.emailMe:hover{
+    color: #ffcc00;
+}
+
+.fa{
+    color: lightgray; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.fa:hover{
+    color: #ffcc00;
+}
+
+.social-link{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+

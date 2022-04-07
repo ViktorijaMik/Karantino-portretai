@@ -1,0 +1,223 @@
+@font-face{
+    font-family: myFont;
+    src: url(../fonts/Roboto-Medium.ttf)
+    }
+
+@font-face{
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf)
+    }
+
+html{
+   height: 100%; 
+}
+
+body {
+    font-family: myFont;
+    background-image:linear-gradient(to left, #99ccff, #99ffcc);
+    margin: 0px;    
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: #333333;
+}
+
+.h2, .h2-pub{
+    font-size: 40px;
+    text-align: center;
+    color: #333333;
+}
+
+@media screen and (max-width: 600px){
+    h1{
+        margin-bottom: 0px;
+    }
+     .h2{
+        margin-bottom: 0px;
+    }
+}
+
+
+/* INDEX */
+
+.intro{
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: justify;
+    font-family: Roboto;
+}
+
+.main-img{
+    display: block;
+    width: 1000px;
+    height: auto;
+}
+
+ #slider {
+      position: relative;
+      overflow: hidden;
+      margin: 20px auto 0 auto;
+      border-radius: 4px;
+ }
+
+ #slider ul {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      height: 200px;
+      list-style: none;
+}
+
+#slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 300px;
+}
+
+ @media screen and (max-width: 600px){
+     h1{
+        font-size: 35px;
+     }
+     .main-img{
+         width: 300px;        
+     }
+     .intro{
+         padding-left: 30px;
+         padding-right: 30px;
+     }
+}
+
+@media screen and (min-width: 601px) and (max-width: 992px){
+    .intro{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .main-img{
+        width: 600px;
+    }
+}
+
+
+/* PUBLICATIONS */
+
+.links{
+    text-decoration: none;
+    color: black;
+}
+
+.links:hover{
+    color: white;
+}
+
+.links-box{
+    margin-left: 60px;
+}
+
+.links-box li{
+    padding-top: 10px;
+    padding-bottom: 10px;  
+}
+
+video{
+    padding: 10px; 
+}
+
+video:focus{
+    outline: none;
+}
+
+.videos{
+    text-align: center; 
+}
+
+.video-item{
+    display: inline-block;
+}
+
+.video-name{
+    margin: 0px 0px 10px 0px;
+}
+
+.click-below{
+    font-size: 18px;
+    margin-left: 50px;
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 992px){
+    .video-name:last-child{
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    video{
+        padding-bottom: 0px;
+    }
+}
+
+
+/* CONTACTS */
+
+.contact-info{
+    padding: 30px;
+    text-align: center;
+}
+
+h4{
+    color: #737373;
+}
+
+.tel{
+    margin-top: 0px;
+    font-size: 20px;
+    text-decoration: none; 
+    color: black;
+}
+
+.fb-insta-email{
+    text-decoration: none; 
+    color: black;
+    font-size: 20px;
+}
+
+.fb-insta-email:hover, .tel:hover{
+    color: white;
+}
+
+.form{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+}
+
+.submit{
+    background-color: black;
+    color: white;
+    font-family: myFont;
+    padding: 10px;
+    margin-top: 20px;
+}
